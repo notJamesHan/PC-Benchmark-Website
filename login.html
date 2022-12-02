@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script async src="./js/login.js"></script>
     <title>PC Database</title>
   </head>
   <body>
@@ -47,11 +47,13 @@
       <input id="emailInput" class="div-7" placeholder="Email" />
       <input id="passwordInput" class="div-7" placeholder="Password" />
 
-      <div class="div-11"><button class="div-12">Login</button></div>
-      <div class="div-13">
-        <div class="div-14"><div class="div-15"></div></div>
-        <button id="loginButton" class="div-16">Create an account</button>
+      <div class="div-11">
+        <button id="loginButton" class="div-12">Login</button>
       </div>
+      <!-- <div class="div-13">
+        <div class="div-14"><div class="div-15"></div></div>
+        <button class="div-16">Create an account</button>
+      </div> -->
     </div>
 
     <div class="canvas2">
@@ -101,12 +103,10 @@
     width: 1083px;
   }
   .image {
+    z-index: -1;
     object-fit: contain;
     object-position: center;
     position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
     left: 0;
   }
   .title1 {
@@ -256,5 +256,8 @@
     letter-spacing: 0%;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
+  }
+  .canvas2 {
+    z-index: -1;
   }
 </style>

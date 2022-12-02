@@ -1,17 +1,30 @@
-const emailInput = document.querySelector("#emailInput");
-const passwordInput = document.querySelector("#passwordInput");
+const emailInput = document.getElementById("emailInput");
+const passwordInput = document.getElementById("passwordInput");
+const loginButton = document.getElementById("loginButton");
 
-const loginButton = document.querySelector("#loginButton");
-
-var login = "";
-var passoword = "";
-
+var datas = {
+  accounts: [
+    {
+      username: "test123",
+      password: "test123",
+    },
+    {
+      username: "test124",
+      password: "test124",
+    },
+  ],
+};
 loginButton.addEventListener("click", function () {
-  console.log(emailInput);
-  console.log(passwordInput);
-  if (emailInput.value === "test123") {
-    console.log("epic");
-  } else {
-    alert("Wrong Email or Password!");
+  for (const acc of datas.accounts) {
+    if (
+      acc.username === emailInput.value &&
+      acc.password === passwordInput.value
+    ) {
+      console.log("epic");
+      alert("Correct!");
+      window.location.replace("main.html");
+      return;
+    }
   }
+  alert("Wrong Email or Password!");
 });
