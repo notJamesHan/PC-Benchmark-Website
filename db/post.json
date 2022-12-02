@@ -1,0 +1,15 @@
+{
+  "post": [
+    {
+      "title": "My Build on HL2",
+      "description": "This is my build!\nIt has a 3070, and an i7. It runs HL2 great!",
+      "build": {
+        "cpu": "intel i7",
+        "gpu": "3070",
+        "ramGB": 16
+      },
+      "program": "Half life 2",
+      "performance": 10
+    }
+  ]
+}
