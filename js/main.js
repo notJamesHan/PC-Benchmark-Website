@@ -18,15 +18,14 @@ var post = {
       performance: 10,
     },
     {
-      title: "Test HL2",
-      description:
-        "This is my build!\nIt has a 3070, and an i7. It runs HL2 great!",
+      title: "Budget Build, Tested for GTA",
+      description: "This is a budget build for GTA 5, i5 with 3050.",
       build: {
         cpu: "intel i5",
-        gpu: "3070",
-        ramGB: 16,
+        gpu: "3050",
+        ramGB: 8,
       },
-      program: "Half life 10",
+      program: "GTA 5",
       performance: 6,
     },
   ],
@@ -35,7 +34,6 @@ var post = {
 function feedUpdate() {
   feed.innerHTML = "";
   for (const eachPost of post.post) {
-    console.log(eachPost);
     const newDiv = document.createElement("div");
     const title = document.createElement("h2");
     title.innerText = eachPost.title;
@@ -66,18 +64,18 @@ function feedUpdate() {
 uploadButton.addEventListener("click", function () {
   const newDiv = document.createElement("div");
   const title = document.createElement("input");
-  title.placeholder = "title";
+  title.placeholder = "Title";
   title.id = "title";
 
   const description = document.createElement("input");
-  description.placeholder = "description";
+  description.placeholder = "Description";
   description.id = "description";
 
   const cpu = document.createElement("input");
   const gpu = document.createElement("input");
   const ramGB = document.createElement("input");
-  cpu.placeholder = "CPU";
-  gpu.placeholder = "GPU";
+  cpu.placeholder = "CPU Name";
+  gpu.placeholder = "GPU Name";
   ramGB.placeholder = "RAM GigaByte";
   cpu.id = "cpu";
   gpu.id = "gpu";
@@ -118,8 +116,6 @@ uploadButton.addEventListener("click", function () {
     const program = document.getElementById("program");
     const performance = document.getElementById("performance");
 
-    console.log(program.value);
-    console.log(performance.value);
     post.post.push({
       title: title.value,
       description: description.value,

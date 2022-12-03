@@ -6,7 +6,7 @@ var datas = {
   accounts: [
     {
       username: "test123",
-      password: "test123",
+      password: "epicgamer",
     },
     {
       username: "test124",
@@ -20,8 +20,6 @@ loginButton.addEventListener("click", function () {
       acc.username === emailInput.value &&
       acc.password === passwordInput.value
     ) {
-      console.log("epic");
-      alert("Correct!");
       window.location.replace("main.html");
       return;
     }

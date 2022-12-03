@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script async src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Document</title>
   </head>
   <body>
     <nav>
-      <div class="div-3">
+      <div class="logos">
         <picture>
           <source
             srcset="
@@ -40,125 +41,11 @@
             class="image"
           />
         </picture>
-        <button id="uploadButton" class="div-6">Upload</button>
-        <button class="div-6"><a href="index.html">Sign-Out</a></button>
+        <button id="uploadButton" class="navButton">Upload</button>
+        <button class="navButton"><a href="index.html">Sign-Out</a></button>
       </div>
     </nav>
     <div id="feed"></div>
     <div id="upload"></div>
   </body>
 </html>
-<style>
-  .div {
-    display: flex;
-    flex-direction: column;
-    max-width: 1962px;
-    justify-content: center;
-    align-items: flex-start;
-    padding-right: 49px;
-    padding-left: 49px;
-    background-color: rgba(255, 255, 255, 1);
-  }
-  .div-2 {
-    display: flex;
-    flex-direction: column;
-    max-width: 263px;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .div-3 {
-    display: flex;
-    align-self: stretch;
-    position: relative;
-    min-width: 20px;
-    min-height: 20px;
-  }
-  .image {
-    object-fit: contain;
-  }
-  .image-sizer {
-    width: 100%;
-    padding-top: 18.250950570342205%;
-    pointer-events: none;
-    font-size: 0;
-  }
-  .div-4 {
-    display: flex;
-    flex-direction: row;
-    max-width: 71px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 14px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    color: rgba(105, 99, 119, 1);
-    font-size: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .div-5 {
-    display: flex;
-    flex-direction: row;
-    max-width: 68px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 14px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    color: rgba(105, 99, 119, 1);
-    font-size: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .div-6 {
-    margin-top: 14px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    color: rgba(105, 99, 119, 1);
-    font-size: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  #feed {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .eachFeed {
-    background-color: beige;
-    margin: 10px;
-    padding: 10px;
-    width: 500px;
-  }
-  #upload {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .uploadDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 800px;
-    text-align: center;
-    background-color: rgb(9, 94, 128);
-    margin: 10px;
-    padding: 10px;
-  }
-  input {
-    margin: 10px;
-    font-size: 20px;
-  }
-</style>

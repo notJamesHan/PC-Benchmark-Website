@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script async src="./js/login.js"></script>
+    <link rel="stylesheet" href="./css/login.css" />
     <title>PC Database</title>
   </head>
   <body>
@@ -43,20 +44,26 @@
       </div>
     </div>
 
-    <div class="div-6">
-      <input id="emailInput" class="div-7" placeholder="Email" />
-      <input id="passwordInput" class="div-7" placeholder="Password" />
+    <div class="flexCenter">
+      <div class="div-6">
+        <input id="emailInput" class="inputStyle" placeholder="Email" />
+        <input
+          id="passwordInput"
+          class="inputStyle"
+          placeholder="Password"
+          type="password"
+        />
 
-      <div class="div-11">
-        <button id="loginButton" class="div-12">Login</button>
-      </div>
-      <!-- <div class="div-13">
+        <button id="loginButton" class="loginBtn">Login</button>
+
+        <!-- <div class="div-13">
         <div class="div-14"><div class="div-15"></div></div>
         <button class="div-16">Create an account</button>
       </div> -->
+      </div>
     </div>
 
-    <div class="canvas2">
+    <!-- <div class="canvas2">
       <picture>
         <source
           srcset="
@@ -87,177 +94,6 @@
           class="image"
         />
       </picture>
-    </div>
+    </div> -->
   </body>
 </html>
-
-<style>
-  .div-3 {
-    display: flex;
-    flex-grow: 1;
-    position: relative;
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 100%;
-    align-self: stretch;
-    width: 1083px;
-  }
-  .image {
-    z-index: -1;
-    object-fit: contain;
-    object-position: center;
-    position: absolute;
-    left: 0;
-  }
-  .title1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 315px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .title2 {
-    display: flex;
-    align-self: stretch;
-    position: relative;
-    min-width: 20px;
-    min-height: 20px;
-    max-width: 263px;
-  }
-
-  .div-6 {
-    display: flex;
-    flex-direction: column;
-    max-width: 491px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    background-color: rgba(152, 181, 223, 0.6000000238418579);
-  }
-  .div-7 {
-    display: flex;
-    flex-direction: column;
-    max-width: 407px;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .div-8 {
-    display: flex;
-    flex-direction: row;
-    max-width: 52px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    background-color: rgba(154, 167, 186, 1);
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .div-9 {
-    display: flex;
-    flex-direction: column;
-    max-width: 407px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 62px;
-  }
-  .div-10 {
-    display: flex;
-    flex-direction: row;
-    max-width: 84px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    background-color: rgba(154, 167, 186, 1);
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    letter-spacing: 0%;
-    text-align: left;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .div-11 {
-    display: flex;
-    flex-direction: column;
-    max-width: 348px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 62px;
-  }
-  .div-12 {
-    display: flex;
-    flex-direction: row;
-    max-width: 42px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    background-color: rgba(37, 125, 228, 1);
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .div-13 {
-    display: flex;
-    flex-direction: column;
-    max-width: 437.01080322265625px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 62px;
-  }
-  .div-14 {
-    display: flex;
-    flex-direction: column;
-    max-width: 437.01080322265625px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-  }
-  .div-15 {
-    display: flex;
-    max-width: 417.01080322265625px;
-    height: 0px;
-    width: 417.01080322265625px;
-    border-color: rgba(0, 0, 0, 1);
-    border-width: 1px;
-    border-style: solid;
-  }
-  .div-16 {
-    display: flex;
-    flex-direction: row;
-    max-width: 133px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    background-color: rgba(0, 117, 255, 0.44999998807907104);
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-  }
-  .canvas2 {
-    z-index: -1;
-  }
-</style>

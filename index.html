@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PC Database</title>
-    <link rel="stylesheet" href="./css/landing.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="navTop">
       <picture>
         <source
           srcset="
@@ -40,46 +40,48 @@
         />
       </picture>
     </nav>
-    <div>
-      <h2 class="title">Show Your Build To The World</h2>
-      <h2 class="title">
-        Join the database and explore the world of PC Builds
-      </h2>
-      <button id="landingSignin" class="signin">
-        <a href="login.html">Sign-In</a>
-      </button>
-    </div>
-    <div class="canvas1">
-      <picture>
-        <source
-          srcset="
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=100   100w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=200   200w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=400   400w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=800   800w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=1200 1200w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=1600 1600w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=2000 2000w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718
-          "
-          type="image/webp"
-        />
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718"
-          srcset="
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=100   100w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=200   200w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=400   400w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=800   800w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=1200 1200w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=1600 1600w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=2000 2000w,
-            https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718
-          "
-          class="image"
-        />
-      </picture>
+    <div class="rightSignin">
+      <!-- <div class="canvas1">
+        <picture>
+          <source
+            srcset="
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=100   100w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=200   200w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=400   400w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=800   800w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=1200 1200w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=1600 1600w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?format=webp&width=2000 2000w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718
+            "
+            type="image/webp"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718"
+            srcset="
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=100   100w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=200   200w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=400   400w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=800   800w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=1200 1200w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=1600 1600w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718?width=2000 2000w,
+              https://cdn.builder.io/api/v1/image/assets%2FTEMP%2F6d5a0666ba7849b086170b81e049f718
+            "
+            class="canvasImage"
+          />
+        </picture>
+      </div> -->
+      <div class="flexListSignin">
+        <h2 class="title">Show Your Build To The World.</h2>
+        <h2 class="title">
+          Join the database and explore the world of PC Builds.
+        </h2>
+        <a href="login.html" class="link"
+          ><button id="landingSignin" class="signin">Sign-In</button></a
+        >
+      </div>
     </div>
   </body>
 </html>
